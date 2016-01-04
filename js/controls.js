@@ -3,6 +3,17 @@ $(document).ready(function(){
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 3500,
-        pauseOnHOver: false
+        pauseOnHOver: false,
+        arrows: false
+      });
+    });
+
+$(document).ready(function(){
+      $('.portfolio').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
       });
     });
