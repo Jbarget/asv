@@ -60,15 +60,26 @@ ul {
   color: #3F4040;;
 }
 
-.splash {
+.logos{
   margin-top: 3em;
-  width: 100%;
+  color: white;
   height: 23em;
-  background-image: url("https://cloud.githubusercontent.com/assets/11725595/12052869/465c4dbe-af0b-11e5-9748-afe1dfa9fa51.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  width: 100%;
+  background-color: grey;
 }
+
+.logos p{
+  position: absolute;
+}
+
+/*.splash {
+    width: 100%;
+    height: 25em;
+    background-image: url("https://cloud.githubusercontent.com/assets/11725595/12052869/465c4dbe-af0b-11e5-9748-afe1dfa9fa51.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}*/
 
 .seperator{
   border: black solid;
@@ -83,7 +94,11 @@ ul {
 text-align: center;
 }
 
-.services {
+.page-tag{
+  /*padding-top: 2em;*/
+}
+
+.portfolios {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -96,57 +111,59 @@ text-align: center;
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  margin-bottom: 2em;
+  /*padding: 3em 0 2em 0;*/
+  /*margin-bottom: 2em;*/
 }
 
-.service {
-  border-color: #e3e3e3;
+.portfolio {
   padding: 2em 2em 0.1em 2em;
-  border-style: solid;
-  border-width: 1px;
-  margin-left: -1px;
-  margin-top: -1px;
-  width: 33.33333%;
+  width: 37%;
+  height: auto;
 }
 
-.service img{
-  width: 2em;
+.images ul{
+  position: static;
 }
 
+/*.portfolios{
+  padding-top: 3em;
+}
+.portfolio{
+  height: auto;
+  width: 40%;
+  padding: 2em;
+}*/
 
-.testimonials{
-  /*width: 100%;*/
-  text-align: center;
-  background-color: #FAFFFC;
+.images img{
+  border: solid blue 2px;
+  max-height: 98%;
+  max-width: 98%;
+  display: block;
 }
 
-.testimonial{
-  padding: 1em;
+@media (max-width: 1280px) {
+
+  .images {
+    padding: 2em 1.5em 0.1em 1.5em;
+  }
 }
 
-  @media (max-width: 1280px) {
-
-    .service {
-      padding: 2em 1.5em 0.1em 1.5em;
-    }
+@media (max-width: 736px) {
+  .title{
+    font-size: 1.1em;
   }
 
-  @media (max-width: 736px) {
-    .title{
-      font-size: 1.1em;
-    }
-
-    .service {
-      padding: 2em 1em 0.1em 1em;
-      width: 50%;
-    }
-
+  .images {
+    padding: 2em 1em 0.1em 1em;
+    width: 50%;
   }
 
-  @media (max-width: 480px) {
+}
 
-    .service {
-      padding: 2em 0.5em 0.1em 0.5em;
-      width: 100%;
-    }
+@media (max-width: 480px) {
+
+  .images {
+    padding: 2em 0 0.1em 0.5em;
+    width: 100%;
   }
+}

@@ -9,11 +9,14 @@ $(document).ready(function(){
     });
 
 $(document).ready(function(){
-      $('.portfolio').slick({
+      $('.images').slick({
+        // autoplay: true,
         dots: true,
         infinite: true,
+        pauseOnHOver: false,
         speed: 500,
-        fade: true,
-        cssEase: 'linear'
+        arrows: true,
+        cssEase: 'linear',
+        mobileFirst: true
       });
     });
